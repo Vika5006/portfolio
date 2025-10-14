@@ -5,15 +5,15 @@
 
 ## 🎯 Problem
 Customer and vendor aging allows the following:
-1) Take a custom defined period (+- 2 weeks, 30-60-90 days old)
-2) Summarize customer debts (or vendor liabilities) into the defined timeframes and display for reference to understand the customer or vendor standing. 
+- Take a custom defined period (+- 2 weeks, 30-60-90 days old)
+- Summarize customer debts (or vendor liabilities) into the defined timeframes and display for reference to understand the customer or vendor standing. 
 Logic that was present in the X++ was looping over each transaction and GL details and performing 1 by 1 calculations, leading to aging calculation time growing linearly based on what size of dataset it is run on. 
 
 ## 💡 Solution
 Designed highly efficient calculation
-1) Select list of customers or vendors making sure all the selection criteria and filters are applied upfront. 
-2) Transform period definition into a date scale table.
-3) Join transactions with list of customers/vendors and date scale. Group and summarize accordingly.
+- Select list of customers or vendors making sure all the selection criteria and filters are applied upfront. 
+- Transform period definition into a date scale table.
+- Join transactions with list of customers/vendors and date scale. Group and summarize accordingly.
 
 ## ⚙️ Learning
 - Implementation leverage global TempDb tables heavily to display data in SSRS report. As we learned more about the lifecycle of them in X++ and Sql, the team had to add explicit dispose calls. 
