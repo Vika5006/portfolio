@@ -20,7 +20,7 @@ Developer-driven support: introduce API on Common and let developers control it.
 
 ## ⚙️ Learning/Trade-offs  
 - Added Sql chattiness. Since now TempDb tables were not persisted after transaction was completed, next run required the same DDL volume. If transactions are small size, added latency may overpower the benefits.    
-- Consequently uncreased latency for small documents (i.e. 1 line invoice posting) due to added chattiness. In tests local session TempDb support did not benefit, but rather harmed workloads consisting of small documents.  
+- Consequently increased latency for small documents (i.e. 1 line invoice posting) due to added chattiness. In tests local session TempDb support did not benefit, but rather harmed workloads consisting of small documents.  
 - During testing discovered that creating primary key constraint on TempDb tables was taking excessive time. Analysis showed using primary key constraints wasn't necessary, unique index was sufficient and consistently faster.  
 
 ## 📈 Results
