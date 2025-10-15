@@ -4,6 +4,7 @@
 I'm a software engineer passionate about 
 - building reliable, supportable systems that reduce operational friction and improve customer outcomes.  
 - building up software engineers around me.  
+
 My experience spans FinTech platforms, ERP integrations, and large-scale reliability engineering.  
 
 ---
