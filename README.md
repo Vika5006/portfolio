@@ -1,11 +1,7 @@
 # 👋 Hi, I'm Veronika Teunissen  
 ### Principal Software Engineer | FinTech | ERP | Supportability  
 
-I'm a software engineer passionate about 
-- building reliable, supportable systems that reduce operational friction and improve customer outcomes.  
-- building up software engineers around me.  
-
-My experience spans FinTech platforms, ERP integrations, and large-scale reliability engineering.  
+I build reliable, supportable systems that reduce operational friction and improve customer outcomes while building up software engineers around me. My experience spans FinTech platforms, ERP integrations, and large-scale reliability engineering.  
 
 ---
 
@@ -23,7 +19,7 @@ My experience spans FinTech platforms, ERP integrations, and large-scale reliabi
 
 ### 2. WebAPI service for Virtual entities authorization  
 **Tech:** C#, D365 F&O, X++  
-**Summary:** Designed and implemented authorization API for Virtual entities, exposing it as WebAPI service on AOS.  
+**Summary:** Designed and implemented authorization API for Virtual entities, exposing it as WebAPI service on Application Object Server (AOS).  
 **Highlights:**  
 - Response cached on Dataverse side to reduce response time for each of user search requests.
 - Enabled compliant Dataverse search on Finance and Operations data, through virtual entities.  
